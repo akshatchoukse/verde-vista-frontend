@@ -8,23 +8,80 @@ import poolImage from "@/assets/infinity-pool.jpg";
 import roomImage from "@/assets/luxury-room.jpg";
 import restaurantImage from "@/assets/restaurant.jpg";
 
+// Real photos of Verde Vista Farmhouse
+const outdoorSeatingImage = "/lovable-uploads/db1d9e6a-e7ac-487d-9b1e-01c0c137fa49.png";
+const luxuryBedroomImage = "/lovable-uploads/eb874b60-7128-4555-86b6-0462c8ee0fbc.png";
+const heartPoolImage = "/lovable-uploads/05824d68-c4e2-473d-a2e6-9e3e36b38843.png";
+const sunsetPoolImage = "/lovable-uploads/488615d8-17db-4c0e-a77b-8db326f2cd1b.png";
+const aerialViewImage = "/lovable-uploads/dc4af127-8ac6-4ace-9cf6-54007240aa7f.png";
+const outdoorPicnicImage = "/lovable-uploads/011f8a2f-75d3-43be-803b-f6b92eaf5745.png";
+const mainBuildingImage = "/lovable-uploads/05e840e1-68ad-4a65-8265-60b282063fa6.png";
+const rusticSetupImage = "/lovable-uploads/27b0d835-f113-43d0-9ca1-eaa2e8e9e5cc.png";
+const sunriseViewImage = "/lovable-uploads/e994d9eb-4ad7-4e55-b1c6-b1b895adb2fe.png";
+const rainyDayImage = "/lovable-uploads/8874c912-23a3-4ae0-ad62-1e43f5b79b90.png";
+
 const Gallery = () => {
   const [selectedImage, setSelectedImage] = useState<number | null>(null);
 
   const galleryImages = [
     {
-      src: heroImage,
-      title: "Verde Vista Farmhouse",
+      src: aerialViewImage,
+      title: "Verde Vista Farmhouse - Aerial View",
       category: "Exterior"
     },
     {
+      src: mainBuildingImage,
+      title: "Main Building & Pool Complex",
+      category: "Exterior"
+    },
+    {
+      src: heartPoolImage,
+      title: "Infinity Swimming Pool with Heart Decoration",
+      category: "Pool Area"
+    },
+    {
+      src: sunsetPoolImage,
+      title: "Sunset View from Infinity Pool",
+      category: "Pool Area"
+    },
+    {
+      src: luxuryBedroomImage,
+      title: "Luxury Suite Room with Garden View",
+      category: "Accommodation"
+    },
+    {
+      src: outdoorSeatingImage,
+      title: "Outdoor Seating Area",
+      category: "Outdoor"
+    },
+    {
+      src: outdoorPicnicImage,
+      title: "Outdoor Picnic Setup",
+      category: "Outdoor"
+    },
+    {
+      src: rusticSetupImage,
+      title: "Traditional Rustic Setup",
+      category: "Outdoor"
+    },
+    {
+      src: sunriseViewImage,
+      title: "Sunrise View from Property",
+      category: "Outdoor"
+    },
+    {
+      src: rainyDayImage,
+      title: "Monsoon Beauty with Farm Animals",
+      category: "Outdoor"
+    },
+    {
       src: poolImage,
-      title: "Infinity Swimming Pool",
+      title: "Pool Area Details",
       category: "Pool Area"
     },
     {
       src: roomImage,
-      title: "Luxury Suite Room",
+      title: "Interior Room Details",
       category: "Accommodation"
     },
     {
@@ -32,31 +89,10 @@ const Gallery = () => {
       title: "Pure Veg Restaurant",
       category: "Dining"
     },
-    // Placeholder images for demonstration
     {
       src: heroImage,
-      title: "Poolside Seating Area",
-      category: "Pool Area"
-    },
-    {
-      src: roomImage,
-      title: "Deluxe Room",
-      category: "Accommodation"
-    },
-    {
-      src: poolImage,
-      title: "Evening Pool View",
-      category: "Pool Area"
-    },
-    {
-      src: restaurantImage,
-      title: "Dining Experience",
-      category: "Dining"
-    },
-    {
-      src: heroImage,
-      title: "Green Lawn Area",
-      category: "Outdoor"
+      title: "Farmhouse Overview",
+      category: "Exterior"
     }
   ];
 

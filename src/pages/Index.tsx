@@ -139,8 +139,8 @@ const Index = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             <div className="relative overflow-hidden rounded-lg group cursor-pointer">
               <img 
-                src={poolImage} 
-                alt="Infinity Pool" 
+                src="/lovable-uploads/05824d68-c4e2-473d-a2e6-9e3e36b38843.png" 
+                alt="Infinity Pool with Heart Decoration" 
                 className="w-full h-64 object-cover transition-transform group-hover:scale-105"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
@@ -152,8 +152,8 @@ const Index = () => {
 
             <div className="relative overflow-hidden rounded-lg group cursor-pointer">
               <img 
-                src={roomImage} 
-                alt="Luxury Rooms" 
+                src="/lovable-uploads/eb874b60-7128-4555-86b6-0462c8ee0fbc.png" 
+                alt="Luxury Suite Room" 
                 className="w-full h-64 object-cover transition-transform group-hover:scale-105"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
@@ -165,14 +165,14 @@ const Index = () => {
 
             <div className="relative overflow-hidden rounded-lg group cursor-pointer">
               <img 
-                src={restaurantImage} 
-                alt="Pure Veg Restaurant" 
+                src="/lovable-uploads/db1d9e6a-e7ac-487d-9b1e-01c0c137fa49.png" 
+                alt="Outdoor Seating Area" 
                 className="w-full h-64 object-cover transition-transform group-hover:scale-105"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
               <div className="absolute bottom-4 left-4 text-white">
-                <h3 className="font-semibold text-lg">Pure Veg Dining</h3>
-                <p className="text-sm text-white/80">Delicious vegetarian cuisine</p>
+                <h3 className="font-semibold text-lg">Outdoor Seating</h3>
+                <p className="text-sm text-white/80">Relax in nature's embrace</p>
               </div>
             </div>
           </div>
