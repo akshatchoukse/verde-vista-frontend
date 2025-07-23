@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
+import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "@/components/ui/carousel";
 import { Link } from "react-router-dom";
 import { 
   MapPin, 
@@ -40,6 +41,27 @@ const Index = () => {
     { icon: Flame, name: "Bonfire Space" },
     { icon: TreePine, name: "Large Green Lawn" },
     { icon: Car, name: "Ample Parking" },
+  ];
+
+  const carouselImages = [
+    {
+      src: "/lovable-uploads/844045a3-bfdd-4f32-be83-ad710f2bbb88.png",
+      alt: "Verde Vista Farmhouse at Sunset",
+      title: "Stunning Evening Views",
+      description: "Beautiful architecture illuminated in golden hour"
+    },
+    {
+      src: "/lovable-uploads/121aeb57-8ca2-4ec3-9041-4b7eaf324fe3.png",
+      alt: "Aerial Pool View",
+      title: "Infinity Pool Paradise",
+      description: "Aerial view of our luxurious pool area with dining"
+    },
+    {
+      src: "/lovable-uploads/b202403e-1b95-4280-9e6d-683d3ea526ee.png",
+      alt: "Luxury Pool Experience",
+      title: "Ultimate Relaxation",
+      description: "Enjoy floating breakfast and poolside service"
+    }
   ];
 
   return (
@@ -95,6 +117,43 @@ const Index = () => {
               <span>Premium Rated</span>
             </div>
           </div>
+        </div>
+      </section>
+
+      {/* Featured Images Carousel */}
+      <section className="py-20 bg-gradient-to-b from-verde-secondary/10 to-background">
+        <div className="container mx-auto px-4">
+          <div className="text-center mb-16">
+            <h2 className="font-playfair text-4xl md:text-5xl font-bold mb-6 text-verde-primary">
+              Discover Our Paradise
+            </h2>
+            <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+              Immerse yourself in the beauty and luxury of Verde Vista Farmhouse
+            </p>
+          </div>
+
+          <Carousel className="w-full max-w-5xl mx-auto">
+            <CarouselContent>
+              {carouselImages.map((image, index) => (
+                <CarouselItem key={index}>
+                  <div className="relative overflow-hidden rounded-xl">
+                    <img 
+                      src={image.src} 
+                      alt={image.alt}
+                      className="w-full h-[500px] object-cover"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent"></div>
+                    <div className="absolute bottom-8 left-8 text-white">
+                      <h3 className="font-playfair text-3xl font-bold mb-2">{image.title}</h3>
+                      <p className="text-lg text-white/90">{image.description}</p>
+                    </div>
+                  </div>
+                </CarouselItem>
+              ))}
+            </CarouselContent>
+            <CarouselPrevious className="left-4" />
+            <CarouselNext className="right-4" />
+          </Carousel>
         </div>
       </section>
 
