@@ -15,22 +15,29 @@ import {
   Shield,
   Clock,
   Users,
-  Star
+  Star,
+  LucideBedDouble
 } from "lucide-react";
 
 const Amenities = () => {
   const mainAmenities = [
     {
+      icon: LucideBedDouble,
+      title: "Suite Room",
+      description: "Enjoy luxurious living in spacious, beautifully styled rooms, complete with contemporary amenities and plush furnishings for an unforgettable stay.",
+      features: ["Jacuzzi", "Private Mini-Garden", "Balcony", "Fridge", "Tea Kettle"]
+    },
+    {
+      icon: Bed,
+      title: "Deluxe Rooms",
+      description: "Spacious, elegantly designed rooms with modern amenities and comfortable furnishing for a perfect stay.",
+      features: ["Private Mini Garden", "AC", "Fridge", "TV"]
+    },
+    {
       icon: Waves,
       title: "Infinity Swimming Pool",
       description: "Crystal clear infinity pool with stunning views, perfect for relaxation and recreation. Open all day with poolside service available.",
       features: ["Infinity edge design", "Crystal clear water", "Poolside seating", "Pool lighting"]
-    },
-    {
-      icon: Bed,
-      title: "Luxury Rooms & Suites",
-      description: "Spacious, elegantly designed rooms with modern amenities and comfortable furnishing for a perfect stay.",
-      features: ["King-size beds", "AC & heating", "Premium bedding", "En-suite bathrooms"]
     },
     {
       icon: Utensils,
@@ -62,12 +69,7 @@ const Amenities = () => {
       description: "Expansive green lawn area perfect for outdoor activities, events, and enjoying the natural surroundings.",
       features: ["Well-maintained grass", "Shade trees", "Event space", "Natural beauty"]
     },
-    {
-      icon: Car,
-      title: "Ample Parking",
-      description: "Secure parking space for multiple vehicles with easy access to the main building.",
-      features: ["Multiple car spaces", "Secure area", "Easy access", "24/7 availability"]
-    }
+    
   ];
 
   const additionalFeatures = [
@@ -157,7 +159,7 @@ const Amenities = () => {
               <div className="text-white/80">Luxury Rooms</div>
             </div>
             <div>
-              <div className="text-3xl font-bold mb-2">10+</div>
+              <div className="text-3xl font-bold mb-2">20+</div>
               <div className="text-white/80">Amenities</div>
             </div>
             <div>

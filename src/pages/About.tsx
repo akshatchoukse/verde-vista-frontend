@@ -15,8 +15,7 @@ const About = () => {
             About Verde Vista
           </h1>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            Nestled in the heart of Madhya Pradesh, Verde Vista Farmhouse offers a perfect escape from city life, 
-            combining luxury with the tranquility of nature.
+            Located in Indore, Madhya Pradesh, Verde Vista Farmhouse is the perfect getaway, offering luxury stays surrounded by nature.
           </p>
         </div>
 
