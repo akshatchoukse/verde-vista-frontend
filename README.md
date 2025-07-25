@@ -1,73 +1,82 @@
-# Welcome to your Lovable project
+# Verde Vista Farmhouse 🌿🏡
 
-## Project info
+**Client:** Freelance Project  
+**Location:** Ujjain State Highway, Behind Aurobindo Hospital, Reoti Range, Indore, Madhya Pradesh 452007  
 
-**URL**: https://lovable.dev/projects/dcedbd49-a7ff-4e0d-8e77-90c4f0f7ec04
+Verde Vista Farmhouse is a premium, pure-veg nature retreat designed for peaceful weekend getaways, intimate events, and family gatherings near Indore. I designed and developed this modern, responsive website as a freelance project to reflect the luxurious yet natural experience Verde Vista offers.
 
-## How can I edit this code?
+---
 
-There are several ways of editing your application.
+## 🚀 Features
 
-**Use Lovable**
+- 🌄 **Hero Section** with immersive banner and CTAs (Book Now, Take 360° Tour)
+- 🧘 **About Page** with highlights of peaceful, premium experiences
+- 🎥 **360° Virtual Tour** (embedded from: [Verde Vista VR](https://mediaology.in/VerdeVistaVR))
+- 🖼️ **High-Resolution Gallery** with lightbox functionality
+- ✅ **Amenities Section** listing all key features including pool, lawn, DJ space, and pure-veg dining
+- 📅 **Booking Page** with date selection, inquiry form, and WhatsApp integration
+- 📍 **Google Maps Embed** for location
+- 💬 **Contact Page** with phone, email, WhatsApp, and embedded map
+- 📱 **Mobile-First Design** with smooth responsive layout
+- 🔎 **SEO Optimized** and performance-tuned
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/dcedbd49-a7ff-4e0d-8e77-90c4f0f7ec04) and start prompting.
+---
 
-Changes made via Lovable will be committed automatically to this repo.
+## 🛠️ Tech Stack
 
-**Use your preferred IDE**
+- **Frontend:** React.js, Tailwind CSS
+- **Icons & UI:** Lucide Icons, ShadCN UI
+- **Image Gallery:** Custom lightbox
+- **Booking & Forms:** Custom-built form with calendar input
+- **Integrations:**  
+  - Google Maps Embed  
+  - WhatsApp API  
+  - 360° Virtual Tour Embed
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+---
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+## 📷 Gallery Highlights
 
-Follow these steps:
+- Infinity Swimming Pool
+- Poolside Seating Area
+- Luxury & Suite Rooms
+- Pure Veg Restaurant
+- Delicious Cuisine Presentation
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+---
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+## 📞 Contact & Booking
 
-# Step 3: Install the necessary dependencies.
-npm i
+- 📞 Phone: +91 91111 77785  
+- 💬 WhatsApp: [Chat on WhatsApp](https://wa.me/919111177785)  
+- 📧 Email: anirudh1804@icloud.com  
+- 📍 Location: [Google Maps](https://maps.app.goo.gl/osnYQHc1Ztma7KqD7?g_st=ipc)
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
-```
+---
 
-**Edit a file directly in GitHub**
+## 📸 Social Media
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+- [Instagram: @verdevistaindore](https://www.instagram.com/verdevistaindore)
 
-**Use GitHub Codespaces**
+---
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+## 👨‍💻 Author
 
-## What technologies are used for this project?
+**Akshat Choukse**  
+Freelance Web Developer    
+Email: choukseakshat@gmail.com
 
-This project is built with:
+---
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+## 📂 Project Status
 
-## How can I deploy this project?
+✅ Completed and delivered  
+🛠️ Maintenance on request  
+📅 Last Updated: July 2025
 
-Simply open [Lovable](https://lovable.dev/projects/dcedbd49-a7ff-4e0d-8e77-90c4f0f7ec04) and click on Share -> Publish.
+---
 
-## Can I connect a custom domain to my Lovable project?
+## 📝 License
 
-Yes, you can!
+This project is for presentation purposes. All assets and content belong to **Verde Vista Farmhouse**.
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)

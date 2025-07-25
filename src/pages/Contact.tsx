@@ -318,7 +318,7 @@ Message: ${formData.message}`;
             <CardContent>
               <div className="aspect-video w-full rounded-lg overflow-hidden">
                 <iframe
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3681.234567890123!2d75.6789!3d22.7890!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjLCsDQ3JzIwLjQiTiA3NcKwNDAnNDQuMSJF!5e0!3m2!1sen!2sin!4v1234567890123!5m2!1sen!2sin"
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3677.8167497768127!2d75.83319709999999!3d22.8092531!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x396303efda9b8c6b%3A0xc406bc4ace02a1e8!2z4KS14KSw4KWN4KSh4KWHIOCkteCkv-CkuOCljeCkn-CkviDgpKvgpL7gpLDgpY3gpK4g4KSP4KSC4KShIOCksOCkv-CkuOClieCksOCljeCknw!5e0!3m2!1shi!2sin!4v1753465220461!5m2!1shi!2sin"
                   className="w-full h-full border-0"
                   allowFullScreen
                   loading="lazy"
