@@ -8,7 +8,6 @@ import poolImage from "@/assets/infinity-pool.jpg";
 import roomImage from "@/assets/luxury-room.jpg";
 import restaurantImage from "@/assets/restaurant.jpg";
 
-// Real photos of Verde Vista Farmhouse
 const outdoorSeatingImage = "/lovable-uploads/db1d9e6a-e7ac-487d-9b1e-01c0c137fa49.png";
 const luxuryBedroomImage = "/lovable-uploads/eb874b60-7128-4555-86b6-0462c8ee0fbc.png";
 const heartPoolImage = "/lovable-uploads/05824d68-c4e2-473d-a2e6-9e3e36b38843.png";
