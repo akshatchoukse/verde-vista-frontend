@@ -19,10 +19,8 @@ import {
   Eye,
   MessageCircle
 } from "lucide-react";
-import heroImage from "@/assets/hero-farmhouse.jpg";
-import poolImage from "@/assets/infinity-pool.jpg";
-import roomImage from "@/assets/luxury-room.jpg";
-import restaurantImage from "@/assets/restaurant.jpg";
+import heroImage from "@/assets/hero.png";
+
 
 const Index = () => {
   const features = [
@@ -57,10 +55,10 @@ const Index = () => {
       description: "Aerial view of our luxurious pool area with dining"
     },
     {
-      src: "/lovable-uploads/b202403e-1b95-4280-9e6d-683d3ea526ee.png",
+      src: "/lovable-uploads/8874c912-23a3-4ae0-ad62-1e43f5b79b90.png",
       alt: "Luxury Pool Experience",
       title: "Ultimate Relaxation",
-      description: "Enjoy floating breakfast and poolside service"
+      description: "Enjoy the magic of rain with a view that touches the sky"
     }
   ];
 
@@ -68,12 +66,13 @@ const Index = () => {
     <div className="min-h-screen">
       {/* Hero Section */}
       <section className="relative h-screen flex items-center justify-center overflow-hidden">
-        <div 
-          className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-          style={{ backgroundImage: `url(${heroImage})` }}
-        >
-          <div className="absolute inset-0 bg-black/40"></div>
-        </div>
+       <div 
+  className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+  style={{ backgroundImage: `url(${heroImage})` }}
+>
+  <div className="absolute inset-0 bg-black/70"></div> {/* Darker Overlay */}
+</div>
+
         
         <div className="relative z-10 text-center text-white px-4 max-w-4xl mx-auto">
           <Badge className="mb-6 bg-verde-gold/20 text-verde-gold border-verde-gold/30">
@@ -93,13 +92,13 @@ const Index = () => {
                 Book Your Stay
               </Link>
             </Button>
-            <Button size="lg" variant="outline" className="border-white text-white hover:bg-white hover:text-verde-primary" asChild>
+            <Button size="lg" className="bg-verde-primary hover:bg-verde-primary-light text-white" asChild>
               <Link to="/virtual-tour">
                 <Eye className="w-5 h-5 mr-2" />
                 360° Virtual Tour
               </Link>
             </Button>
-            <Button size="lg" variant="outline" className="border-white text-white hover:bg-white hover:text-verde-primary" asChild>
+            <Button size="lg"  className="bg-verde-primary hover:bg-verde-primary-light text-white" asChild>
               <a href="https://wa.me/919111177785" target="_blank" rel="noopener noreferrer">
                 <MessageCircle className="w-5 h-5 mr-2" />
                 WhatsApp
@@ -224,14 +223,14 @@ const Index = () => {
 
             <div className="relative overflow-hidden rounded-lg group cursor-pointer">
               <img 
-                src="/lovable-uploads/db1d9e6a-e7ac-487d-9b1e-01c0c137fa49.png" 
+                src="/lovable-uploads/b202403e-1b95-4280-9e6d-683d3ea526ee.png" 
                 alt="Outdoor Seating Area" 
                 className="w-full h-64 object-cover transition-transform group-hover:scale-105"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
               <div className="absolute bottom-4 left-4 text-white">
-                <h3 className="font-semibold text-lg">Outdoor Seating</h3>
-                <p className="text-sm text-white/80">Relax in nature's embrace</p>
+                <h3 className="font-semibold text-lg">Pool, snacks, and peace</h3>
+                <p className="text-sm text-white/80">The perfect combo</p>
               </div>
             </div>
           </div>
@@ -294,7 +293,7 @@ const Index = () => {
                 Book Now
               </Link>
             </Button>
-            <Button size="lg" variant="outline" className="border-white text-white hover:bg-white hover:text-verde-primary" asChild>
+            <Button size="lg" variant="secondary"  asChild>
               <a href="tel:9111177785">
                 Call: +91 91111 77785
               </a>
