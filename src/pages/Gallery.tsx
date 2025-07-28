@@ -16,7 +16,7 @@ const Gallery = () => {
 
   const getAllImage = () => {
     axios
-      .get("http://localhost:5090/api/gallery")
+      .get("https://verde-vista-backend.onrender.com/api/gallery")
       .then((res) => setAllImage(res.data))
       .catch((err) => alert("Failed to load images"));
   };
