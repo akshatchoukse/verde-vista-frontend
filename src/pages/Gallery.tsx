@@ -1,106 +1,32 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
+import axios from "axios";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Dialog, DialogContent } from "@/components/ui/dialog";
 import { X, ChevronLeft, ChevronRight, Camera } from "lucide-react";
-import heroImage from "@/assets/hero-farmhouse.jpg";
-import poolImage from "@/assets/infinity-pool.jpg";
-import roomImage from "@/assets/luxury-room.jpg";
-import restaurantImage from "@/assets/restaurant.jpg";
-
-const outdoorSeatingImage = "/lovable-uploads/db1d9e6a-e7ac-487d-9b1e-01c0c137fa49.png";
-const luxuryBedroomImage = "/lovable-uploads/eb874b60-7128-4555-86b6-0462c8ee0fbc.png";
-const heartPoolImage = "/lovable-uploads/05824d68-c4e2-473d-a2e6-9e3e36b38843.png";
-const sunsetPoolImage = "/lovable-uploads/488615d8-17db-4c0e-a77b-8db326f2cd1b.png";
-const aerialViewImage = "/lovable-uploads/dc4af127-8ac6-4ace-9cf6-54007240aa7f.png";
-const outdoorPicnicImage = "/lovable-uploads/011f8a2f-75d3-43be-803b-f6b92eaf5745.png";
-const mainBuildingImage = "/lovable-uploads/05e840e1-68ad-4a65-8265-60b282063fa6.png";
-const rusticSetupImage = "/lovable-uploads/27b0d835-f113-43d0-9ca1-eaa2e8e9e5cc.png";
-const sunriseViewImage = "/lovable-uploads/e994d9eb-4ad7-4e55-b1c6-b1b895adb2fe.png";
-const rainyDayImage = "/lovable-uploads/8874c912-23a3-4ae0-ad62-1e43f5b79b90.png";
 
 const Gallery = () => {
+  const [allImage, setAllImage] = useState([]);
   const [selectedImage, setSelectedImage] = useState<number | null>(null);
-
-  const galleryImages = [
-    {
-      src: aerialViewImage,
-      title: "Verde Vista Farmhouse - Aerial View",
-      category: "Exterior"
-    },
-    {
-      src: mainBuildingImage,
-      title: "Main Building & Pool Complex",
-      category: "Exterior"
-    },
-    {
-      src: heartPoolImage,
-      title: "Infinity Swimming Pool with Heart Decoration",
-      category: "Pool Area"
-    },
-    {
-      src: sunsetPoolImage,
-      title: "Sunset View from Infinity Pool",
-      category: "Pool Area"
-    },
-    {
-      src: luxuryBedroomImage,
-      title: "Luxury Suite Room with Garden View",
-      category: "Accommodation"
-    },
-    {
-      src: outdoorSeatingImage,
-      title: "Outdoor Seating Area",
-      category: "Outdoor"
-    },
-    {
-      src: outdoorPicnicImage,
-      title: "Outdoor Picnic Setup",
-      category: "Outdoor"
-    },
-    {
-      src: rusticSetupImage,
-      title: "Traditional Rustic Setup",
-      category: "Outdoor"
-    },
-    {
-      src: sunriseViewImage,
-      title: "Sunrise View from Property",
-      category: "Outdoor"
-    },
-    {
-      src: rainyDayImage,
-      title: "Monsoon Beauty with Farm Animals",
-      category: "Outdoor"
-    },
-    {
-      src: poolImage,
-      title: "Pool Area Details",
-      category: "Pool Area"
-    },
-    {
-      src: roomImage,
-      title: "Interior Room Details",
-      category: "Accommodation"
-    },
-    {
-      src: restaurantImage,
-      title: "Pure Veg Restaurant",
-      category: "Dining"
-    },
-    {
-      src: heroImage,
-      title: "Farmhouse Overview",
-      category: "Exterior"
-    }
-  ];
-
-  const categories = ["All", "Exterior", "Pool Area", "Accommodation", "Dining", "Outdoor"];
   const [activeCategory, setActiveCategory] = useState("All");
 
-  const filteredImages = activeCategory === "All" 
-    ? galleryImages 
-    : galleryImages.filter(img => img.category === activeCategory);
+  useEffect(() => {
+    getAllImage();
+  }, []);
+
+  const getAllImage = () => {
+    axios
+      .get("http://localhost:5090/api/gallery")
+      .then((res) => setAllImage(res.data))
+      .catch((err) => alert("Failed to load images"));
+  };
+
+  const categories = ["All", "Exterior", "Pool Area", "Accommodation", "Dining", "Outdoor"];
+
+  const filteredImages =
+    activeCategory === "All"
+      ? allImage
+      : allImage.filter((img) => img.category === activeCategory);
 
   const nextImage = () => {
     if (selectedImage !== null) {
@@ -127,8 +53,9 @@ const Gallery = () => {
             Explore Verde Vista
           </h1>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            Discover the beauty and luxury of our farmhouse through our comprehensive photo gallery. 
-            From stunning outdoor spaces to elegant interiors, see what makes Verde Vista special.
+            Discover the beauty and luxury of our farmhouse through our comprehensive photo
+            gallery. From stunning outdoor spaces to elegant interiors, see what makes Verde Vista
+            special.
           </p>
         </div>
 
@@ -155,7 +82,7 @@ const Gallery = () => {
               onClick={() => setSelectedImage(index)}
             >
               <img
-                src={image.src}
+                src={image.image}
                 alt={image.title}
                 className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110"
               />
@@ -182,13 +109,13 @@ const Gallery = () => {
                 >
                   <X className="w-6 h-6" />
                 </button>
-                
+
                 <img
-                  src={filteredImages[selectedImage].src}
+                  src={filteredImages[selectedImage].image}
                   alt={filteredImages[selectedImage].title}
                   className="w-full h-auto max-h-[80vh] object-contain"
                 />
-                
+
                 <div className="absolute bottom-4 left-4 text-white">
                   <h3 className="text-lg font-semibold">{filteredImages[selectedImage].title}</h3>
                   <p className="text-sm text-white/80">{filteredImages[selectedImage].category}</p>
@@ -202,7 +129,7 @@ const Gallery = () => {
                     >
                       <ChevronLeft className="w-6 h-6" />
                     </button>
-                    
+
                     <button
                       onClick={nextImage}
                       className="absolute right-4 top-1/2 -translate-y-1/2 p-2 bg-black/50 text-white rounded-full hover:bg-black/70 transition-colors"
