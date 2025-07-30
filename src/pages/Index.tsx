@@ -19,7 +19,8 @@ import {
   Eye,
   MessageCircle
 } from "lucide-react";
-import heroImage from "@/assets/hero.png";
+import heroImage from "/Images/dc4af127-8ac6-4ace-9cf6-54007240aa7f.png";
+
 
 
 const Index = () => {
