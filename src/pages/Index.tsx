@@ -210,7 +210,7 @@ const Index = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             <div className="relative overflow-hidden rounded-lg group cursor-pointer">
               <img 
-                src="/lovable-uploads/05824d68-c4e2-473d-a2e6-9e3e36b38843.png" 
+                src="/Images/05824d68-c4e2-473d-a2e6-9e3e36b38843.png" 
                 alt="Infinity Pool with Heart Decoration" 
                 className="w-full h-64 object-cover transition-transform group-hover:scale-105"
               />
@@ -223,7 +223,7 @@ const Index = () => {
 
             <div className="relative overflow-hidden rounded-lg group cursor-pointer">
               <img 
-                src="/lovable-uploads/eb874b60-7128-4555-86b6-0462c8ee0fbc.png" 
+                src="/Images/eb874b60-7128-4555-86b6-0462c8ee0fbc.png" 
                 alt="Luxury Suite Room" 
                 className="w-full h-64 object-cover transition-transform group-hover:scale-105"
               />
@@ -236,7 +236,7 @@ const Index = () => {
 
             <div className="relative overflow-hidden rounded-lg group cursor-pointer">
               <img 
-                src="/lovable-uploads/b202403e-1b95-4280-9e6d-683d3ea526ee.png" 
+                src="/Images/b202403e-1b95-4280-9e6d-683d3ea526ee.png" 
                 alt="Outdoor Seating Area" 
                 className="w-full h-64 object-cover transition-transform group-hover:scale-105"
               />
