@@ -21,7 +21,7 @@ const Gallery = () => {
       .catch((err) => alert("Failed to load images"));
   };
 
-  const categories = ["All", "Exterior", "Pool Area", "Accommodation", "Dining", "Outdoor"];
+  const categories = ["All", "Exterior", "Infinity Pool", "Accommodation", "Dining", "Outdoor"];
 
   const filteredImages =
     activeCategory === "All"

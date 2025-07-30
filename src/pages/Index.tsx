@@ -43,22 +43,34 @@ const Index = () => {
 
   const carouselImages = [
     {
-      src: "/lovable-uploads/844045a3-bfdd-4f32-be83-ad710f2bbb88.png",
+      src: "/Images/844045a3-bfdd-4f32-be83-ad710f2bbb88.png",
       alt: "Verde Vista Farmhouse at Sunset",
       title: "Stunning Evening Views",
       description: "Beautiful architecture illuminated in golden hour"
     },
     {
-      src: "/lovable-uploads/121aeb57-8ca2-4ec3-9041-4b7eaf324fe3.png",
+      src: "/Images/121aeb57-8ca2-4ec3-9041-4b7eaf324fe3.png",
       alt: "Aerial Pool View",
       title: "Infinity Pool Paradise",
       description: "Aerial view of our luxurious pool area with dining"
     },
     {
-      src: "/lovable-uploads/8874c912-23a3-4ae0-ad62-1e43f5b79b90.png",
+      src: "/Images/8874c912-23a3-4ae0-ad62-1e43f5b79b90.png",
       alt: "Luxury Pool Experience",
       title: "Ultimate Relaxation",
       description: "Enjoy the magic of rain with a view that touches the sky"
+    },
+    {
+      src: "/Images/05824d68-c4e2-473d-a2e6-9e3e36b38843.png",
+      alt: "Infinity Pool Experience",
+      title: "Enjoy Hill View",
+      description: "Wake up where the sky meets the mountains"
+    },
+    {
+      src: "/Images/dc4af127-8ac6-4ace-9cf6-54007240aa7f.png",
+      alt: "Infinity Pool Experience",
+      title: "Drive into Peace",
+      description: "Unwind where luxury meets nature in the heart of the hills"
     }
   ];
 
